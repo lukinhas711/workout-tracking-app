@@ -7,6 +7,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "engines" : { 
+    "node" : "^16"
+  },
   "devDependencies": {
     "nuxt": "^3.2.3"
   }
