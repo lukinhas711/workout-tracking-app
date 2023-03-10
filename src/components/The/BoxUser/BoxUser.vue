@@ -7,7 +7,7 @@
   </section>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { ChevronDownIcon } from '@heroicons/vue/24/outline'
 
 const isLogged = ref(false)
