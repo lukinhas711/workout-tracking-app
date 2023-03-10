@@ -1,3 +1,5 @@
 <template>
-  <div>Hellow Vue</div>
+  <div>
+    <p>estou aqui</p>
+  </div>
 </template>
