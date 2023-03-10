@@ -4,7 +4,7 @@
     <main>
       <BaseContainer>
         <template #center>
-          <NuxtPage class="mt-[60px]" />
+          <NuxtPage class="mt-[80px]" />
         </template>
       </BaseContainer>
     </main>
