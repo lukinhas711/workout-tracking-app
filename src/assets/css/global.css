@@ -6,3 +6,22 @@
 * { 
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  @apply w-0 lg:w-[5px];
+}
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-black-secondary pt-[70px] 2xl:pt-20;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-custom-blue bg-opacity-80;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-custom-blue bg-opacity-100;
+}
