@@ -8,6 +8,3 @@
     </section>
   </button>
 </template>
-
-<script lang="ts">
-</script>
