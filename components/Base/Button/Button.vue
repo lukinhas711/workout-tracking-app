@@ -1,5 +1,5 @@
 <template>
-  <button :class="style.button">
+  <button :class="$style.button">
     <nuxt-link :to="to" :class="$style.isLogin">
       <slot name="login" />
     </nuxt-link>
