@@ -1,13 +1,25 @@
 <template>
-  <section
-    class="fixed bg-black inset-x-0 h-[80px] flex items-center py-2 px-6 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[95]">
+  <section :class="$style.menu">
     <BaseContainer>
       <template #between>
-        <img draggable="false"
+        <img
+          draggable="false"
           src="data:image/png;base64,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"
-          alt="Logo do app" width="100" class="bg-white h-10">
+          alt="Logo do app"
+          width="100"
+          :class="$style.logo"
+        />
         <TheBoxUser />
       </template>
     </BaseContainer>
   </section>
 </template>
+
+<style module lang="postcss">
+.menu {
+  @apply fixed bg-black inset-x-0 h-[80px] flex items-center py-2 px-6 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-[95];
+}
+.logo {
+  @apply bg-white h-10;
+}
+</style>
