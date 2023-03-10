@@ -1,5 +1,5 @@
 <template>
-  <section :class="$style.container">
+  <section :class="$style.mainContainer">
     <section :class="$style.center">
       <slot name="center" />
     </section>
@@ -10,7 +10,7 @@
 </template>
 
 <style module lang="postcss">
-.container {
+.mainContainer {
   @apply container mx-auto;
 }
 
