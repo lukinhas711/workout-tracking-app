@@ -1,10 +1,22 @@
 <template>
   <button class="bg-custom-blue text-white py-1 px-6 font-bold rounded-full lg:hover:bg-sky-600 duration-300">
-    <section class="uppercase">
+    <nuxt-link :to="to" class="uppercase">
       <slot name="login" />
-    </section>
-    <section>
+    </nuxt-link>
+    <nuxt-link :to="to">
       <slot />
-    </section>
+    </nuxt-link>
   </button>
 </template>
+
+<script setup lang="ts">
+
+const props = defineProps({
+  to: {
+    type: String,
+    required: true,
+    defalt: ''
+  }
+})
+
+</script>
